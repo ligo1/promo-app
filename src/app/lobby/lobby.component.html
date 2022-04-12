@@ -1,0 +1,10 @@
+<h1>Promotions</h1>
+<ul class="promotions">
+  <li *ngFor="let promotion of promotions" class="teaser">
+    <a routerLink="/promotions/{{promotion.title}}">
+    <h4>{{promotion.title}}</h4>
+    <img src={{promotion.image}} /><br>
+    <span>{{promotion.description}}</span><br>
+  </a>
+  </li>
+</ul>
